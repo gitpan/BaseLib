@@ -1,0 +1,16 @@
+Revision history for Perl extension BaseLib.
+
+0.03  Tue Feb 27 16:55:39 JAVT 2001
+    - made sure that the BASEDIR argument is looked up as
+      a directory name
+    - called lib.pm only if the path to the lib dir isn't in @INC yet
+    - updated the documentation, primarily the section on CAVEAT
+
+0.02  Tue Aug 29 19:37:53 2000
+    - since I use so many croak()'s, I provide my own
+      private croak() routine as front end to Carp::croak().
+    - uses lib.pm to actually manipulate @INC.
+    - base directory name is now mandatory
+
+0.01  Wed Aug 23 18:57:49 2000
+	- original version; created by h2xs 1.19
